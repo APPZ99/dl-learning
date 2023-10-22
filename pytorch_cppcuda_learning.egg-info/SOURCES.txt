@@ -1,5 +1,6 @@
 README.md
 interpolation.cpp
+interpolation_kernel.cu
 setup.py
 pytorch_cppcuda_learning.egg-info/PKG-INFO
 pytorch_cppcuda_learning.egg-info/SOURCES.txt

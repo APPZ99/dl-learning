@@ -1,9 +1,11 @@
 import torch
 import pytorch_cppcuda_learning
 
-feats = torch.ones(2)
-point = torch.zeros(2)
+if __name__ == '__main__':
+    
+    feats = torch.ones(2, device='cuda')
+    points = torch.zeros(2, device='cuda')
 
-out = pytorch_cppcuda_learning.trilinear_interpolation(feats, point)
+    out = pytorch_cppcuda_learning.trilinear_interpolation(feats, points)
 
-print(out)
+    print(out)
