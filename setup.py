@@ -5,7 +5,9 @@ from setuptools import setup
 from torch.utils.cpp_extension import CUDAExtension, BuildExtension
 
 ROOT_DIR = osp.dirname(osp.abspath(__file__))
+# 头文件路径
 include_dirs = [osp.join(ROOT_DIR, "include")]
+# cpp 和 cu 源文件作为 sources
 sources = glob.glob('*.cpp') + glob.glob('*.cu')
 
 setup(

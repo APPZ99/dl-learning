@@ -11,6 +11,7 @@ torch::Tensor trilinear_fw_cu(
     const torch::Tensor points
 );
 
+// 反向传播函数声明
 torch::Tensor trilinear_bw_cu(
     const torch::Tensor dL_dfeat_interp,
     const torch::Tensor feats,

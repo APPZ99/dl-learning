@@ -5,6 +5,7 @@
 
 torch::Tensor trilinear_interpolation_fw(torch::Tensor feats, torch::Tensor points){
     
+    // 检测是否在 GPU 上
     CHECK_INPUT(feats);
     CHECK_INPUT(points);
     
@@ -13,6 +14,7 @@ torch::Tensor trilinear_interpolation_fw(torch::Tensor feats, torch::Tensor poin
 
 torch::Tensor trilinear_interpolation_bw(torch::Tensor dL_dfeat_interp, torch::Tensor feats, torch::Tensor points){
     
+    // 检测是否在 GPU 上
     CHECK_INPUT(dL_dfeat_interp);
     CHECK_INPUT(feats);
     CHECK_INPUT(points);
