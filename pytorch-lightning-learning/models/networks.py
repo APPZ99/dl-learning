@@ -10,7 +10,7 @@ class LinearModel(nn.Module):
                                  nn.ReLU(True),
                                  nn.Linear(hidden_dim, 10))
         
-    def forword(self, x):
+    def forward(self, x):
         """
         x: (B, 1, 28, 28) batch of images
         """
