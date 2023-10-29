@@ -1,0 +1,4 @@
+ckpts/
+logs/
+__pycache__/
+MNIST/
